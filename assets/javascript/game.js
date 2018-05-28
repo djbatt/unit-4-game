@@ -12,6 +12,7 @@ $(document).ready(function() {
             crystalCollector.currentScore = 0;
             crystalCollector.numberGoal = Math.floor(Math.random() * 120) + 19;
 
+            $(".alert").text("");
             $("#randomNumberChoice").text(crystalCollector.numberGoal);
             $("#yourWins").text(crystalCollector.wins);
             $("#yourLosses").text(crystalCollector.losses);
@@ -47,24 +48,32 @@ $(document).ready(function() {
             $(".sapphire").click(function () {
                 var crystal = crystalCollector.gemArray[0];
                 crystalCollector.currentScore = crystalCollector.currentScore + crystalCollector.gemArray[0];
+                $(".alert-primary").text(crystalCollector.gemArray[0]);
+
                 crystalCollector.updatePage();
                 crystalCollector.checkWin();
             });
             $(".ruby").click(function () {
                 var crystal = crystalCollector.gemArray[1];
                 crystalCollector.currentScore = crystalCollector.currentScore + crystalCollector.gemArray[1];
+                $(".alert-danger").text(crystalCollector.gemArray[1]);
+
                 crystalCollector.updatePage();
                 crystalCollector.checkWin();
             });
             $(".emerald").click(function () {
                 var crystal = crystalCollector.gemArray[2];
                 crystalCollector.currentScore = crystalCollector.currentScore + crystalCollector.gemArray[2];
+                $(".alert-success").text(crystalCollector.gemArray[2]);
+
                 crystalCollector.updatePage();
                 crystalCollector.checkWin();
             });
             $(".diamond").click(function () {
                 var crystal = crystalCollector.gemArray[3];
                 crystalCollector.currentScore = crystalCollector.currentScore + crystalCollector.gemArray[3];
+                $(".alert-info").text(crystalCollector.gemArray[3]);
+
                 crystalCollector.updatePage();
                 crystalCollector.checkWin();
             });

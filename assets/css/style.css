@@ -1,13 +1,10 @@
 body {
     font-family: 'Permanent Marker', cursive;
-    font-size: 24px;
+    font-size: 40px;
     color: #2b2b2b;
-}
-
-.container {
     background-color: #f0f0e1;
 }
 
-.col-md-5 {
-    font-size: 40px;
+.col-md-6 {
+    font-size: 29px;
 }
